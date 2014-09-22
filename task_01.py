@@ -25,13 +25,12 @@ for numbertwo in range(0, len(RAWDATA)):
 
 AVERAGE_WORDS = float(len(data.SHAKESPEARE.split())) / float(len(RAWDATA))
 
-DATAREMOVE = data.SHAKESPEARE
-            .replace(".", " ")
-            .replace("'", " ")
-            .replace(";"," ")
-            .replace("-", " ")
-            .replace("?", " ")
-            .replace(",", " ")
+DATAREMOVE = data.SHAKESPEARE.replace(".", " ")
+                             .replace("'", " ")
+                             .replace(";"," ")
+                             .replace("-", " ")
+                             .replace("?", " ")
+                             .replace(",", " ")
 print DATAREMOVE
 RAWDATATWO = DATAREMOVE.split()
 NUM_CRISPIAN = RAWDATATWO.count("Crispian")

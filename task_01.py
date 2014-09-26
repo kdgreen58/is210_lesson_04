@@ -11,26 +11,27 @@ RAWDATA = data.SHAKESPEARE.split("\n")
 
 MAXIMUM_WORDS = None
 
-for number in range(0, len(RAWDATA)):
-    RAWDATAT = len(RAWDATA[number].split(" "))
+for NUMBER in range(0, len(RAWDATA)):
+    RAWDATAT = len(RAWDATA[NUMBER].split(" "))
     if RAWDATAT > MAXIMUM_WORDS:
         MAXIMUM_WORDS = RAWDATAT
 
 MINIMUM_WORDS = MAXIMUM_WORDS
 
-for numbertwo in range(0, len(RAWDATA)):
-    RAWDATATT = len(RAWDATA[numbertwo].split(" "))
+for NUMBERTWO in range(0, len(RAWDATA)):
+    RAWDATATT = len(RAWDATA[NUMBERTWO].split(" "))
     if RAWDATATT < MINIMUM_WORDS:
         MINIMUM_WORDS = RAWDATATT
-
+        
 AVERAGE_WORDS = float(len(data.SHAKESPEARE.split())) / float(len(RAWDATA))
 
-DATAREMOVE = data.SHAKESPEARE.replace(".", " ")
-                             .replace("'", " ")
-                             .replace(";"," ")
-                             .replace("-", " ")
-                             .replace("?", " ")
-                             .replace(",", " ")
-print DATAREMOVE
-RAWDATATWO = DATAREMOVE.split()
-NUM_CRISPIAN = RAWDATATWO.count("Crispian")
+COUNTER = 0
+NUM_CRISPIAN = 0
+
+for NUMBERTHREE in RAWDATA:
+    COUNTER += 1
+    if "Crispian" in NUMBERTHREE:
+        NUM_CRISPIAN +=1
+    
+    
+

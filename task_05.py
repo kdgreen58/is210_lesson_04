@@ -4,7 +4,7 @@
 
 import data
 
-MATCHUPS = ""
+MATCHUPS = ''
 COUNTER = 0
 LINE = '{0},"{1}","{2}"\n'
 

@@ -6,7 +6,7 @@ import data
 
 MATCHUPS = ""
 COUNTER = 0
-LINE = '{0}, "{1}", "{2}"\n'
+LINE = '{0},"{1}","{2}"\n'
 
 for ROW_INDEX, ROW in enumerate(data.VERSUS):
     for COLUMN_INDEX, COLUMN in enumerate(data.VERSUS):

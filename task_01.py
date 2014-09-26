@@ -22,7 +22,7 @@ for NUMBERTWO in range(0, len(RAWDATA)):
     RAWDATATT = len(RAWDATA[NUMBERTWO].split(" "))
     if RAWDATATT < MINIMUM_WORDS:
         MINIMUM_WORDS = RAWDATATT
-        
+
 AVERAGE_WORDS = float(len(data.SHAKESPEARE.split())) / float(len(RAWDATA))
 
 COUNTER = 0
@@ -31,7 +31,4 @@ NUM_CRISPIAN = 0
 for NUMBERTHREE in RAWDATA:
     COUNTER += 1
     if "Crispian" in NUMBERTHREE:
-        NUM_CRISPIAN +=1
-    
-    
-
+        NUM_CRISPIAN += 1

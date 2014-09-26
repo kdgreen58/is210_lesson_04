@@ -23,7 +23,7 @@ for LINE in data.MULTIPLAYERS.split("\n")[1:]:
         elif TEAMID == 2:
             TEAM2 += NAME + ","
         else:
-            TEAM3 += NAME + ","            
+            TEAM3 += NAME + ","           
     if COUNTER >= MAX:
         break
 

@@ -14,4 +14,4 @@ for ROW_INDEX, ROW_NAME in enumerate(data.VERSUS):
             COUNTER += 1
             MATCHUPS += LINE.format(COUNTER, COLUMN_NAME, ROW_NAME)
 
-print MATCHUPS.strip("\n")
+print MATCHUPS.strip("\n").strip(" ")

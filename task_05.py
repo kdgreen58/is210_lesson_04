@@ -12,6 +12,6 @@ for ROW_INDEX, ROW in enumerate(data.VERSUS):
     for COLUMN_INDEX, COLUMN in enumerate(data.VERSUS):
         if ROW_INDEX < COLUMN_INDEX:
             COUNTER += 1
-            MATCHUPS += LINE.format(COUNTER, COLUMN, ROW)
+            MATCHUPS += LINE.format(COUNTER, ROW, COLUMN)
 
 print MATCHUPS.strip()
